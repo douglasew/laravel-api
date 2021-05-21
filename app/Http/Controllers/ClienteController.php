@@ -43,7 +43,7 @@ class ClienteController extends Controller
         return Cliente::find($id);
     }
 
-    public function update(Request $request,Cliente $cliente)
+    public function update(Request $request,int $id)
     {
         //
         request()->validate([
@@ -56,7 +56,7 @@ class ClienteController extends Controller
             'rg' => 'required',
         ]);
         
-        $success = $cliente->update([
+         return Cliente::where('id', $id)->update([
             'nome' => $request->input('nome'),
             'email' => $request->input('email'),
             'idade' => $request->input('idade'),
@@ -64,11 +64,7 @@ class ClienteController extends Controller
             'senha' => $request->input('senha'),
             'cpf' => $request->input('cpf'),
             'rg' => $request->input('rg')
-        ]);
-
-        return [
-            'success' => $success
-        ];
+        ]); 
     }
 
     public function destroy($id)
