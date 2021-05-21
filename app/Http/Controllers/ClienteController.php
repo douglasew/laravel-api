@@ -42,7 +42,6 @@ class ClienteController extends Controller
     public function update(Request $request,Cliente $cliente)
     {
         //
-        //
         request()->validate([
             'nome' => 'required',
             'email' => 'required',
