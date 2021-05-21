@@ -22,6 +22,8 @@ class ClienteController extends Controller
             'idade' => 'required',
             'sexo' => 'required',
             'senha' => 'required',
+            'cpf' => 'required',
+            'rg' => 'required',
         ]);
 
         return Cliente::create([
@@ -30,6 +32,8 @@ class ClienteController extends Controller
             'idade' => $request->input('idade'),
             'sexo' => $request->input('sexo'),
             'senha' => $request->input('senha'),
+            'cpf' => $request->input('senha'),
+            'rg' => $request->input('senha'),
         ]);
     }
 
@@ -48,6 +52,8 @@ class ClienteController extends Controller
             'idade' => 'required',
             'sexo' => 'required',
             'senha' => 'required',
+            'cpf' => 'required',
+            'rg' => 'required',
         ]);
         
         $success = $cliente->update([
@@ -56,6 +62,8 @@ class ClienteController extends Controller
             'idade' => $request->input('idade'),
             'sexo' => $request->input('sexo'),
             'senha' => $request->input('senha'),
+            'cpf' => $request->input('senha'),
+            'rg' => $request->input('senha')
         ]);
 
         return [

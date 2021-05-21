@@ -14,7 +14,9 @@ class Cliente extends JsonResource
             'nome' => $this->nome,
             'email' => $this->email,
             'sexo' => $this->sexo,
-            'senha' => $this->senha
+            'senha' => $this->senha,
+            'cpf' => $this->senha,
+            'rg' => $this->senha
         ];
     }
 }

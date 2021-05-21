@@ -15,5 +15,7 @@ class Cliente extends Model
         'idade',
         'sexo',
         'senha',
+        'cpf',
+        'rg'
     ];
 }
