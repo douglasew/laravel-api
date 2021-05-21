@@ -21,8 +21,8 @@ Open [http://localhost/example-api/public/api/](http://localhost/example-api/pub
 
 ### APIs endpoints
 
-GET  [/clientes](http://localhost:8080/pacientes)  [all clients]  
-GET  [/cliente/{id}](http://localhost:8080/paciente/{id})  [single client]  
-POST  [/cliente](http://localhost:8080/paciente/cadastro)  [create a new client]  
-PUT  [/cliente/{id}](http://localhost:8080/paciente/{id}/editar)  [update a client]  
-DELETE  [/cliente/{id}](http://localhost:8080/paciente/{id}/delete)  [delete a client]
+GET  [/clientes](http://localhost/example-api/public/api/clientes)  [all clients]  
+GET  [/cliente/{id}](http://localhost/example-api/public/api/clientes/id)  [single client]  
+POST  [/cliente](http://localhost/example-api/public/api/cliente)  [create a new client]  
+PUT  [/cliente/{id}](http://localhost/example-api/public/api/clientes/id)  [update a client]  
+DELETE  [/cliente/{id}](http://localhost/example-api/public/api/clientes/id)  [delete a client]
