@@ -32,8 +32,8 @@ class ClienteController extends Controller
             'idade' => $request->input('idade'),
             'sexo' => $request->input('sexo'),
             'senha' => $request->input('senha'),
-            'cpf' => $request->input('senha'),
-            'rg' => $request->input('senha'),
+            'cpf' => $request->input('cpf'),
+            'rg' => $request->input('rg'),
         ]);
     }
 
@@ -62,8 +62,8 @@ class ClienteController extends Controller
             'idade' => $request->input('idade'),
             'sexo' => $request->input('sexo'),
             'senha' => $request->input('senha'),
-            'cpf' => $request->input('senha'),
-            'rg' => $request->input('senha')
+            'cpf' => $request->input('cpf'),
+            'rg' => $request->input('rg')
         ]);
 
         return [
