@@ -12,6 +12,10 @@ Command to generate your app key:
 ```sh
 php artisan key:generate
 ```
+Command to generate a migrate:
+```sh
+php artisan migrate
+```
 Run server
 ```sh
 php artisan serve
