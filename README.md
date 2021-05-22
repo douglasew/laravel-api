@@ -13,7 +13,7 @@ Command to generate your app key:
 php artisan key:generate
 ```
 ## Database
-Create your database and add the name in ".env" before doing the migration
+Create your database and add the name in ".env"
 
 ![settings of connection with database](https://cdn.discordapp.com/attachments/331545069423165440/845492439191126047/unknown.png)
 
@@ -21,7 +21,7 @@ Command to generate a migrate:
 ```sh
 php artisan migrate
 ```
-Run server
+Run server:
 ```sh
 php artisan serve
 ```
